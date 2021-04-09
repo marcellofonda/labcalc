@@ -1,6 +1,6 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Ciao! Questo readme dev'essere ancora compilato. Date pure un'occhiata in giro!
 
 ### What is this repository for? ###
 
