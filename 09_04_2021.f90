@@ -1,6 +1,6 @@
 program esempio
 implicit none
-integer :: a,b,c,i
+integer :: a,b,c,i,j
 
 read*, a, b
 
@@ -22,12 +22,24 @@ do i = 1, 10, 2
     print*,i,i**2 ! Stampa un numero e il suo quadrato
 end do
 
+!visualizzare il valore di i dopo il ciclo ci aiuta a capire come funziona il ciclo stesso.
+print*, 'i dopo ciclo do ',i
+
 do
     read*, a
     if(a<0) exit
     print*,a,a**3+c
 end do
 
-print *, 'the end'
+esterno: do i=1,4
+interno:     do j=1,4
+                !passo al valore successivo di i il caso in cui i==j
+                !se non fosse specificato, cycle farebbe riferimento al ciclo interno
+                if(i==j) cycle esterno
+                print*,i,j
+             end do interno
+         end do esterno
+
+print *, ' the end'
 
 end program esempio
