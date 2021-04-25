@@ -16,7 +16,7 @@
 * La gestione delle modifiche ai file di questo repository avviene attraverso il sistema GIT: per più informazioni, leggere la sezione sotto.
 * Per fare qualsiasi modifica occorre un account GitHub. La creazione di un nuovo account è molto rapida e si fa cliccando in alto a destra su `Register`.
 * Per modificare un file, navigare fino al file stesso, cliccarci sopra e cliccare sulla matita (a destra delle scritte `Raw` e `Blame`).
-* Per aggiungere un file, 
+* Per aggiungere un file, premere sul tasto `Add file`
 * Una volta terminata la modifica o aggiunta che sia, scendere in fondo e compilare i due campi sopra il pulsante verde: dare un breve riassunto delle modifiche (poche parole) e una descrizione più dettagliata (errori corretti, funzionalità aggiunte, ecc.)
 * Potete modificare più file in successione e fare più commit. Quando siete soddisfatti fate una _Pull request_: Continuate a premere sui bottoni grandi e verdi e compilate i campi con delle descrizioni di cosa avete fatto, più o meno pertinenti, cercate solo di non confondermi troppo.
 * Se tutto è andato a buon fine dovrebbe essere comparsa una Pull request nella sezione omonima della barra orizzontale. A breve io darò un'occhiata e confermerò le modifiche. Grazie del contributo prezioso! :)
