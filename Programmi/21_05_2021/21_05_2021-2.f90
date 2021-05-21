@@ -12,7 +12,14 @@ type :: triangolo
     type(punto) :: vertice_A
     type(punto) :: vertice_B
     type(punto) :: vertice_C
-end type triangolo
+    
+    contains
+    proceduer,pass :: baricentro
+end class triangolo
+
+interface operator(+)
+    module procedure sum_points
+end interface operator(+)
 
 contains
     function sum_points(p,q) result(r)
@@ -30,14 +37,24 @@ contains
     end
     
     function lunghezza(segm) result(lun)
-        type(segmento),intent(in) :: segm
+        type(segmento),intent(in)   :: segm
+        type(point)                 :: differenza
         real :: lun
-        lun = sqrt((segm
+        differenza = segm%estremo_1+invert(segm%estremo2)
+        lun = sqrt(differenza%x**2+differenza%y**2)
     end function lunghezza
     
     function perimetro(tri) result(peri)
-    
+        !DA COMPLETARE
     end function perimetro
+    
+    function baricentro(this) result(pcm)
+        class(triangolo)    :: this
+        type(punto)         :: pcm
+        
+        punto%x = (this%vertice_A%x+this%vertice_B%x+this%vertice_C%x)/3
+        punto%y = (this%vertice_A%y+this%vertice_B%y+this%vertice_C%y)/3
+    end function baricentro
 end module geom
 
 program piano
