@@ -56,7 +56,7 @@ subroutine radice(a0,b0,z,delta,res)
 			end do
 			if(trovato==0) then
 				print*, "Non ho trovato niente, mi dispiace, cerca altrove"
-				res=1/(z-z)
+				res=1/(z-z) !Se non trovi niente restituisci infinito
 			end if
 		end if
 	end if

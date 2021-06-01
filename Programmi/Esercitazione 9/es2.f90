@@ -11,7 +11,7 @@ function funzione1(x,z) result(res)
 	real,intent(in):: x,z
 	real :: res
 	if(z<0) then
-		res=1/(z-z)
+		res=1/(z-z) !Se cerchi di calcolare radici di negativi restituisci infinito
 	else
 		res= x**2-z
 	end if
@@ -48,7 +48,7 @@ subroutine radice(z, delta, res)
 	end do
 	if(trovato==0) then
 		print*, "Mi dispiace, non riesco a trovare zeri."
-		res=1/(z-z)
+		res=1/(z-z) !Se non trovi niente restituisci infinito
 	end if
 end subroutine
 
