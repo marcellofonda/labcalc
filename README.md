@@ -3,7 +3,7 @@
 ### A cosa serve questo repository? ###
 
 * Ciao! In questo repository cerco di mettere tutti i programmi che vediamo a lezione e durante le esercitazioni. Dai pure un'occhiata in giro e non aver paura di cliccare da nessuna parte: solo io posso modificare direttamente i file, quindi non puoi far danni. (Per sapere come modificare veramente le cose, vedi sotto).
-* Ultimo aggiornamento: 27/04/2021 (Aggiunta l'esercitazione 4)
+* Ultimo aggiornamento: 06/06/2021 (Aggiunta l'esercitazione 9)
 
 ### Come navigo nel sito? ###
 
